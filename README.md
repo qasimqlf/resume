@@ -1,3 +1,3 @@
-# My GitHub Pages Site
+# Qasim's Portfolio
 
-This is a simple static site hosted on GitHub Pages.
+A modern, responsive portfolio website showcasing my skills, projects, and contact details.
