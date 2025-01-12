@@ -1,146 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Qasim QLF - Resume</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-
-        body {
-            line-height: 1.6;
-            color: #333;
-            background: #f4f4f4;
-            padding: 20px;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        h1, h2, h3 {
-            margin-bottom: 10px;
-            color: #0073e6;
-        }
-
-        .section {
-            margin-bottom: 20px;
-        }
-
-        .section-title {
-            border-bottom: 2px solid #0073e6;
-            padding-bottom: 5px;
-            margin-bottom: 10px;
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        ul li {
-            margin-bottom: 10px;
-        }
-
-        a {
-            color: #0073e6;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        .skill {
-            background: #eaf4ff;
-            color: #0073e6;
-            margin: 5px;
-            padding: 5px 10px;
-            border-radius: 4px;
-            font-size: 14px;
-        }
-
-        .contact-info {
-            margin-top: 20px;
-            text-align: center;
-        }
-
-        .contact-info a {
-            display: inline-block;
-            margin: 0 10px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Qasim's Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <header>
+    <nav class="navbar">
+      <div class="container">
+        <h1 class="logo">Qasim</h1>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
     <div class="container">
-        <header>
-            <h1>Qasim QLF</h1>
-            <p>Senior Detection and Software Engineer | 5+ Years Experience</p>
-        </header>
-
-        <section class="section">
-            <h2 class="section-title">About Me</h2>
-            <p>Looking for a challenging opportunity with an organization of repute that recognizes my true potential and effectively utilizes my analytical, technical, and management skills to benefit mutual growth. I thrive on challenging work and aim to grow rapidly in the fields of mobile application, web, and software development.</p>
-        </section>
-
-        <section class="section">
-            <h2 class="section-title">Experience</h2>
-            <ul>
-                <li><strong>Senior Detection Engineer</strong> - <em>Company in Austria</em> (March 2022 - Present)</li>
-                <li><strong>Developer & Detection Engineer</strong> - <em>Company in Austria</em> (Dec 2018 - March 2022)</li>
-                <li><strong>Freelance Software Developer</strong> - Fiverr (July 2024 - Present)</li>
-            </ul>
-        </section>
-
-        <section class="section">
-            <h2 class="section-title">Education</h2>
-            <ul>
-                <li><strong>Bachelor's in Computer Science</strong> - University of [Your University]</li>
-            </ul>
-        </section>
-
-        <section class="section">
-            <h2 class="section-title">Skills</h2>
-            <div class="skills">
-                <span class="skill">Web Development</span>
-                <span class="skill">Software Development</span>
-                <span class="skill">Python</span>
-                <span class="skill">SQL</span>
-                <span class="skill">API Testing</span>
-                <span class="skill">Threat & Vulnerability Management</span>
-                <span class="skill">C#</span>
-                <span class="skill">MongoDB</span>
-            </div>
-        </section>
-
-        <section class="section">
-            <h2 class="section-title">Projects</h2>
-            <ul>
-                <li><strong>Medical Store Management System</strong> - Developed using C# and Oracle Database</li>
-            </ul>
-        </section>
-
-        <section class="section contact-info">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:qasim@example.com">qasim@example.com</a></p>
-            <p>LinkedIn: <a href="https://linkedin.com/in/qasim">linkedin.com/in/qasim</a></p>
-            <p>GitHub: <a href="https://github.com/qasimQLF">github.com/qasimQLF</a></p>
-        </section>
+      <h2>Hi, I'm Qasim</h2>
+      <p>A passionate <span class="highlight">Software Engineer</span> with over 5 years of experience.</p>
+      <a href="#contact" class="btn">Hire Me</a>
     </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I'm a senior software engineer specializing in detection engineering, software development, and web development. My mission is to deliver efficient and scalable solutions.</p>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-list">
+        <div class="project">
+          <img src="assets/img/project1.jpg" alt="Project 1">
+          <h3>Project 1</h3>
+          <p>Developed a medical store management system using C# and Oracle Database.</p>
+        </div>
+        <div class="project">
+          <img src="assets/img/project2.jpg" alt="Project 2">
+          <h3>Project 2</h3>
+          <p>Created a responsive e-commerce website for a local business.</p>
+        </div>
+        <div class="project">
+          <img src="assets/img/project3.jpg" alt="Project 3">
+          <h3>Project 3</h3>
+          <p>Implemented a robust API testing framework with Postman.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul class="skill-list">
+        <li>Python</li>
+        <li>Java</li>
+        <li>C#</li>
+        <li>API Testing</li>
+        <li>Web Development</li>
+        <li>Database Management</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>If you'd like to work with me, feel free to reach out!</p>
+      <a href="mailto:qasim@example.com" class="btn">Email Me</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Qasim. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
