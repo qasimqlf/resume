@@ -11,12 +11,13 @@ body {
   padding: 0;
   background: #f4f7fc;
   color: #333;
+  line-height: 1.6;
 }
 
 /* Navbar */
 header {
   background-color: #1a1a1a;
-  padding: 20px 0;
+  padding: 15px 0;
 }
 
 .navbar {
@@ -28,7 +29,7 @@ header {
 
 .navbar .logo {
   color: white;
-  font-size: 1.8em;
+  font-size: 1.6em;
 }
 
 .navbar .nav-links {
@@ -44,6 +45,7 @@ header {
   text-decoration: none;
   color: #fff;
   font-weight: 600;
+  transition: color 0.3s;
 }
 
 .navbar .nav-links a:hover {
@@ -54,28 +56,36 @@ header {
 .hero {
   background: linear-gradient(135deg, #f8c800, #fc4a1a);
   color: white;
-  padding: 100px 0;
+  padding: 80px 0;
   text-align: center;
+  background-size: cover;
 }
 
 .profile-pic {
-  width: 150px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   margin-bottom: 20px;
+  border: 4px solid white;
 }
 
 .hero h2 {
-  font-size: 2.5em;
+  font-size: 2em;
   margin-bottom: 20px;
 }
 
+.hero .highlight {
+  color: #f8c800;
+}
+
 .hero .btn {
-  padding: 10px 20px;
+  padding: 12px 25px;
   background-color: #fc4a1a;
   color: #fff;
   font-weight: 600;
   border-radius: 5px;
   text-decoration: none;
+  transition: background-color 0.3s;
 }
 
 .hero .btn:hover {
@@ -84,11 +94,11 @@ header {
 
 /* Section styles */
 .section {
-  padding: 60px 0;
+  padding: 60px 20px;
 }
 
 h2 {
-  font-size: 2.5em;
+  font-size: 2.2em;
   text-align: center;
   margin-bottom: 40px;
 }
@@ -99,13 +109,15 @@ ul {
 }
 
 ul li {
-  font-size: 1.2em;
+  font-size: 1.1em;
   margin-bottom: 15px;
 }
 
 .project-list {
   display: flex;
   justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .project {
@@ -113,26 +125,37 @@ ul li {
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 30%;
+  width: calc(33.333% - 20px);
   text-align: center;
+  margin-bottom: 20px;
+  transition: transform 0.3s;
 }
 
 .project img {
   width: 100%;
+  height: auto;
   border-radius: 10px;
+  object-fit: cover;
+}
+
+.project:hover {
+  transform: translateY(-5px);
 }
 
 .skill-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
+  gap: 10px;
 }
 
 .skill-list li {
   background-color: #f8c800;
-  padding: 10px;
+  padding: 12px 20px;
   border-radius: 20px;
   margin: 5px;
+  text-align: center;
+  font-weight: 600;
 }
 
 footer {
@@ -145,8 +168,39 @@ footer {
 footer a {
   color: #f8c800;
   text-decoration: none;
+  font-weight: 600;
 }
 
 footer a:hover {
   text-decoration: underline;
+}
+
+/* Make layout responsive */
+@media (max-width: 768px) {
+  .project {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .project {
+    width: 100%;
+  }
+
+  .navbar .nav-links {
+    display: block;
+    text-align: center;
+  }
+
+  .navbar .nav-links li {
+    margin-bottom: 10px;
+  }
+
+  .hero {
+    padding: 60px 0;
+  }
+
+  .hero h2 {
+    font-size: 1.8em;
+  }
 }
