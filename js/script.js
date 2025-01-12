@@ -1,8 +1,15 @@
-// Smooth scrolling
-document.querySelectorAll('.nav-links a').forEach(link => {
-  link.addEventListener('click', e => {
-    e.preventDefault();
-    const target = document.querySelector(e.target.getAttribute('href'));
-    target.scrollIntoView({ behavior: 'smooth' });
-  });
-});
+// Sticky navbar on scroll
+window.onscroll = function() {
+  stickyNavbar();
+};
+
+let navbar = document.querySelector(".navbar");
+let sticky = navbar.offsetTop;
+
+function stickyNavbar() {
+  if (window.pageYOffset > sticky) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
